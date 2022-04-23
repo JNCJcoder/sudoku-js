@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Sudoku Solver</h1>
+        <canvas id="canvas" width='500' height='500'></canvas>
+        <div class="panel">
+            <input 
+                type="text" 
+                id="sudokuString" 
+                name="sudokuString" 
+                maxlength="81"
+                minlength="81"
+                placeholder="Sudoku String"
+                size="96"
+                value="013840926687250410900630000700100000000908130008004065470000091000006500051400000"
+            >
+            <div>
+                <button id="solverButton">Solver</button>
+                <a>Time: <b id="solverTime"></b></a>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
